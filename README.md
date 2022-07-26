@@ -494,8 +494,11 @@ C=Q/V=3.8/2.5=1.52 F
 10.Un estudiante desea construir un capacitor de 1 F con dos placas cuadradas para un proyecto de feria de las ciencias. Planea utilizar un dieléctrico de papel (Er = 2.5) de 8x10^5 m de espesor. La feria de las ciencias se va a llevar a cabo en el “Astrodomo”. ¿Cabrá su capacitor en el “Astrodomo”? ¿De qué tamaño serían las placas si pudieran ser construidas? 
 
 C=(AEr (8.85X10^(-12)))/d
-A=Cd/(Er (8.85X10^(-12)))=((1F)(8X10^(-5)))/((2.5)(8.85X10^(-12)))=3.6 X10^6  m^2
+
+A=Cd/(Er (8.85X10^(-12)))=((1F)(8X10^(-5)))/((2.5)(8.85X10^(-12)))=3.6 X10^6 m^2
+
 I=√A=√(3.6 X10^6)=1.9 X10^3 m
+
 El condensador sería muy grande y poco práctico, las placas serian de 1.2 milis, porque no entraría en el Astrodomo. 
 
 12.A temperatura ambiente (25°C), se especifica que cierto capacitor sea de 1000 pF. El capacitor tiene coeficiente de temperatura negativo de 200 ppm/°C. ¿Cuál es su capacitancia a 75°C? 
@@ -542,10 +545,216 @@ CT=1000pF/5=200pF
 
 ![image](https://user-images.githubusercontent.com/105823435/181120253-6b40b1cf-a88d-440e-84fb-34c2c96364b0.png)
 
+a) 
+
+CT=1/(1/1μF+1/2.2μF)=0.69μF
+
+b) 	
+
+CT=1/(1/100pF+1/560pF+1/390pF)=69.7pF
+
+c) 
+
+CT=1/(1/10μF+1/4.7μF+1/47μF+1/22μF)=2.6μF
+
+24.La carga total guardada por los capacitores en serie de la figura 12-70 es de 10 mC. Determine el voltaje entre las terminales de cada capacitor. 
+
+![image](https://user-images.githubusercontent.com/105823435/181121240-77c7885f-9a3e-4a5e-b972-f026cf3e5143.png)
+
+CT=Q1=Q2=Q3=Q4=10μC
+
+V1=Q1/C1 =10μC/4.7μF=2.13 V
+
+V2=Q2/C2 =10μC/1μF=10 V
+
+V3=Q3/C3 =10μC/2.2μF=4.55 V
+
+V4=Q4/C4 =10μC/10μF=1 V
+
+SECCIÓN 12–4 Capacitores en paralelo 
+
+26.¿Cuál es la carga en cada capacitor de la figura 12-71?
+ 
+![image](https://user-images.githubusercontent.com/105823435/181121468-208d6c70-e174-40a7-9b08-b4b944ef3792.png)
+
+a)
+
+CT=47pF+10pF+1000pF=1057pF
+
+b) 
+
+CT=0.1μF+0.01μF+0.001μF+0.01μF=0.121μF
+
+28.¿Cuál es el voltaje entre los nodos A y B en cada circuito de la figura 12-72? 
+
+![image](https://user-images.githubusercontent.com/105823435/181121533-dc62bbca-1a71-4aea-b431-808964a25a5c.png)
+
+a)V_AB=5V
+
+b)V_AB=10V
+
+c)V_AB=10V
+
+El voltaje de un capacitor en paralelo será igual al voltaje de la fuente.
+
+30.Determine la constante de tiempo para cada una de las combinaciones en serie: 
+
+a)R = 100, C = 1F
+
+t=RC=(100Ω)(1μF)=100μs
+
+b)R = 10M, C = 47pF
+
+t=RC=(10MΩ)(47pF)=470μs
+
+c)R = 4.7, C = 0.0047F
+
+t=RC=(4.7kΩ)(0.0047μF)=22.1μs
+
+d)R = 1.5M, C = 0.01F
+
+t=RC=(1.5MΩ)(0.01μF)=15ms
+
+32.En el circuito de la figura 12-74, inicialmente el capacitor está descargado. Determine el voltaje presente en el capacitor en los instantes posteriores al cierre del interruptor: 
+
+a)10μs
+
+V=VF (1-e^(-t/RC))=15V(1-e^(-10μs/10μs))=9.48V
+
+b)20μs
+
+V=VF(1-e^(-t/RC))=15V(1-e^(-20μs/10μs))=13V
+
+c) 30μs
+
+V=VF(1-e^(-t/RC))=15V(1-e^(-30μs/10μs))=14.3V
+
+d)40μs
+
+V=VF(1-e^(-t/RC))=15V(1-e^(-40μs/10μs))=14.7V
+
+e)50μs
+
+V=VF(1-e^(-t/RC))=15V(1-e^(-50μs/10μs))=14.9V
+
+34.Repita el problema 32 con los siguientes intervalos de tiempo:
+
+a)2μs
+
+V=VF(1-e^(- t/RC) )=15V(1-e^(- 2μs/10μs) )=2.72V
+
+b) 5μs
+
+V=VF (1-e^(-t/RC))=15V(1-e^(-5μs/10μs))=5.9V
+
+c) 15μs
+
+V=VF(1-e^(- t/RC))=15V(1-e^(-15μs/10μs))=11.65V
+
+36.Derive la fórmula para determinar el tiempo en cualquier punto de una curva de voltaje exponencial creciente. Use esta fórmula para calcular el tiempo en el cual el voltaje que aparece en la figura 12-76 llega a 6 V después de cerrar el interruptor. 
+
+![image](https://user-images.githubusercontent.com/105823435/181122211-d45ffc9b-d134-40e1-8ef2-35434206ab22.png)
+
+t=-RCln(v/v_i)=-(2.2kΩ)(0.01μF)ln(6v/12v)
+
+=15.2μs
+
+38.¿Cuánto tiempo requiere el capacitor C para descargarse a 3 V en la figura 12-75?
+
+![image](https://user-images.githubusercontent.com/105823435/181122277-f47a5e3b-2370-4f5a-a3ba-57c2d1665dc0.png)
+
+t=-RCln(v/vi)=-(1kΩ)(1.5μF)ln(3v/25v)
+
+=3.18ms
+
+40.En la figura 12-78, inicialmente el capacitor está descargado. En el instante t = 10 ms después de que se cierra el interruptor, el voltaje instantáneo en el capacitor es de 7.2 V. Determine el valor de R. 
+
+![image](https://user-images.githubusercontent.com/105823435/181122351-13447787-86ac-443d-8d68-947920ae1db4.png)
+
+t=-RCln(v/vi)
+
+R=-t/Cln(1-Vc/VF) 
+
+R=(-10μs)/((1000pF)ln⁡(1-7.2V/10V))=7.86 kΩ
+
+SECCIÓN 12–6 Capacitores en circuitos de CA 
+
+42.¿Cuál es el valor de la reactancia capacitiva total en cada circuito de la figura 12-80? 
+
+![image](https://user-images.githubusercontent.com/105823435/181122414-a62a03bd-9ced-4aca-92ae-e184c51ab5df.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181122446-56e49db7-4785-49a5-ae40-93756f1fabb0.png)
+
+44.En cada circuito de la figura 12-80, ¿qué frecuencia se requiere para producir una XC de 100 Æ? ¿Una XC de 1 kΩ? 
+
+![image](https://user-images.githubusercontent.com/105823435/181122504-67ff5501-798e-4fef-b280-d06662de52c8.png)
+
+Xc = 1kΩ
+
+![image](https://user-images.githubusercontent.com/105823435/181122545-5c626994-ccb0-4629-95a3-91228f95048e.png)
+
+c) 
+
+![image](https://user-images.githubusercontent.com/105823435/181122902-791df233-a2a3-4755-be99-ac51add72011.png)
+
+46.Se aplica un voltaje de 10 kHz a un capacitor de 0.0047 mF, y se mide una corriente rms de 1 mA. ¿Cuál es el valor del voltaje? 
+
+![image](https://user-images.githubusercontent.com/105823435/181122950-6e3acf1d-f19c-4247-b816-54c2519d84b0.png)
+
+48.Determine el voltaje de ca entre las terminales de cada capacitor y la corriente en cada rama del circuito de la figura 12-81
+
+![image](https://user-images.githubusercontent.com/105823435/181123022-544868e9-9d2a-4c8a-a27c-23cb606b1ac9.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123046-a8a569ed-f8bc-4191-ac96-b3f46c205deb.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123057-d9c4aa94-0fe4-4266-927f-5a3a8d82803a.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123082-1f46b136-94c8-40b3-bbd6-ed822cc18895.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123100-f72a016a-4cee-40c5-9926-e34815705c3e.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123108-afb23e05-4e93-40f5-9e24-8fa53b7ee421.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123139-61587342-f06a-423e-bc34-91ef771b99d2.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123163-7bfc068d-a548-4a08-8587-c1ce19d7d82e.png)
+
+50.Si en la figura 12-81 C4 se abriera, determine los voltajes que se medirían entre las terminales de los otros capacitores.
+
+![image](https://user-images.githubusercontent.com/105823435/181123526-7db1f4d9-ca83-4d03-8193-f68a6f260227.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123549-501f891b-ea09-4b08-adb3-50dfe8d6b231.png)
+
+![image](https://user-images.githubusercontent.com/105823435/181123559-195c8599-80b3-4521-809a-16db74188516.png)
+
+SECCIÓN 12–7 Aplicaciones de los capacitores 
+
+52.Idealmente, ¿cuál deberá ser la reactancia de un capacitor de desvío para eliminar un voltaje de ca de 10 kHz en un punto dado en un circuito amplificador?
+
+Tiene que ser 0Ω para proporcionar un cortocircuito a tierra.
+
+SECCIÓN 12–8 Circuitos de capacitor conmutado 
+
+54.En un circuito de capacitor conmutado, el capacitor de 100 pF se conmuta a una frecuencia de 8 kHz. ¿Qué valor de resistor se emula?
+
+R = 1/fc 
+
+R = 1/(8kHz)*(100pF)
+
+R = 1250k
+
+4.-Video
 
 
 
+5.-Conclusiones 
 
+Se analizó y aplico los métodos expuestos en los capítulos once y doce.
 
+S identifico una forma de onda sinusoidal y medir sus características. 
 
+Se identificó los capacitores en serie y paralelo.
 
+6.-Bibliografía
+
+Alonso, J. (4 de Septiembre de 2018). Electronica. Obtenido de Electronica: https://cifpn1.com/electronica/?p=4113
